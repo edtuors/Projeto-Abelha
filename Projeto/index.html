@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação 3D | Ed Carlos</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo" aria-label="Go to homepage">Ed Carlos</a>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Galeria</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <model-viewer src="bee.glb" id="bee-model" camera-orbit="90deg 90deg" autoplay></model-viewer>
+
+    <main>
+        <section class="home" data-animate>
+            <h1>Animação 3D</h1>
+        </section>
+
+        <section class="about" data-animate>
+            <div class="about-content">
+                <h2>Sobre as abelhas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi necessitatibus error eius commodi aliquam molestias perferendis. Dolor nobis dolorem, maiores hic deleniti eum fuga adipisci totam odit architecto porro.</p>
+                <a href="#">Ver mais</a>
+            </div>
+        </section>
+
+        <section class="gallery" data-animate>
+            <div class="gallery-content">
+                <div class="outer">
+                    <div class="inner">
+                        <img src="bee1.png" alt="Bee 1">
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="inner"></div>
+                </div>
+                <div class="outer">
+                    <div class="inner">
+                        <img src="bee3.png" alt="Bee 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" data-animate>
+            <form class="contact-form">
+                <h2>Contato</h2>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <textarea placeholder="Descrição" required></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ed Carlos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
